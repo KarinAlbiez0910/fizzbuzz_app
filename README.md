@@ -15,15 +15,17 @@ The function generate_all_elements combines the number fizzbuzz and the placehol
 dictionaries into one dictionary structure and all of the combined dictionaries are
 appended to a list called all_elements.
 
-The API is generated via the Flask and Flask_Restful Frameworks and the following
+The API is generated via the Flask and Flask-Restful Frameworks and the following
 endpoints are implemented:
 
-1. api.add_resource(FizzBuzzEntitities, '/fizzbuzz-entities')
+1. api.add_resource(FizzBuzzEntitities, '/fizzbuzz-entities'):
+
 Configured to access the first ten fizzbuzz entities:
 
 ![](./fizzbuzz_entities_request.jpg)
 
-api.add_resource(FizzBuzz, '/fizzbuzz/<int:num>'):
+2. api.add_resource(FizzBuzz, '/fizzbuzz/<int:num>'):
+
 Configured to access the entity corresponding to the number entered in the
 variable part of the path, <int:num>: 
 
